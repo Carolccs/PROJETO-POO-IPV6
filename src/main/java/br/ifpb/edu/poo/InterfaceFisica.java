@@ -21,3 +21,4 @@ public class InterfaceFisica {
     public String toString() {
         return nome + " (" + enderecoIP + ")";
     }
+}

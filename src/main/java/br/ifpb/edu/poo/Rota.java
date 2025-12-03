@@ -2,14 +2,14 @@ package br.ifpb.edu.poo;
 
 public class Rota {
     private String destino;
-    private String gateway;
     private String mascara;
-    private InterfaceFisica interfaceFisica; // agora é um objeto, não uma String
+    private String gateway;
+    private InterfaceFisica interfaceFisica;
 
-    public Rota(String destino, String gateway, String mascara, InterfaceFisica interfaceFisica) {
+    public Rota(String destino, String mascara, String gateway, InterfaceFisica interfaceFisica) {
         this.destino = destino;
-        this.gateway = gateway;
         this.mascara = mascara;
+        this.gateway = gateway;
         this.interfaceFisica = interfaceFisica;
     }
 
@@ -20,6 +20,6 @@ public class Rota {
 
     @Override
     public String toString() {
-        return destino + " / " + mascara + " → " + gateway + " (" + interfaceFisica.getNome() + ")";
+        return destino + " / " + mascara + " / " + gateway + " (" + interfaceFisica.getNome() + ")";
     }
 }

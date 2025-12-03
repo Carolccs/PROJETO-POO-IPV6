@@ -14,7 +14,7 @@ public class GerenciadorInterfaces {
             }
         }
         interfaces.add(new InterfaceFisica(nome, ip));
-        System.out.println("✅ Interface cadastrada com sucesso!");
+        System.out.println(" Interface cadastrada com sucesso!");
     }
 
     public InterfaceFisica buscarPorNome(String nome) {
@@ -28,9 +28,9 @@ public class GerenciadorInterfaces {
 
     public void listarInterfaces() {
         if (interfaces.isEmpty()) {
-            System.out.println("⚠️ Nenhuma interface cadastrada.");
+            System.out.println(" Nenhuma interface cadastrada.");
         } else {
-            System.out.println("🌐 Interfaces Físicas:");
+            System.out.println(" Interfaces Físicas:");
             for (InterfaceFisica i : interfaces) {
                 System.out.println("- " + i);
             }
